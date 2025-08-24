@@ -1,4 +1,6 @@
-#include <cstring>
+// Copyright (c) 2025 Uladzislau Blok <blokv75@gmail.com>
+// This project is licensed under the MIT License.
+
 #include <iostream>
 #include <netinet/in.h>
 #include <sys/socket.h>
@@ -11,7 +13,7 @@ int main() {
     int serverSocket = socket(AF_INET, SOCK_STREAM, 0);
 
     // specifying the address
-    sockaddr_in serverAddress{};
+    sockaddr_in serverAddress;
     serverAddress.sin_family = AF_INET;
     serverAddress.sin_port = htons(8080);
     serverAddress.sin_addr.s_addr = INADDR_ANY;

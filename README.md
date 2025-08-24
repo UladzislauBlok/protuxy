@@ -1,7 +1,5 @@
 ## Protuxy - simple HTTP proxy from the scratch
 
----
-
 #### Build
 
 * Configure cmake project
@@ -15,7 +13,7 @@
 #### Run
 
 * Run excutable main
-    * `./protux`
+    * `./protuxy`
 
 ---
 
